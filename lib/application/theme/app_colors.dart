@@ -1,16 +1,6 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  // static const white = Color.fromARGB(255, 255, 255, 255);
-  // static const gray = Color.fromARGB(255, 123, 123, 123);
-  // static const lightGray = Color.fromARGB(255, 251, 251, 251);
-  // static const transparentWhite = Color.fromRGBO(170, 170, 170, 1);
-  // static const darkBlue = Color.fromARGB(255, 61, 72, 161);
-  // static const purple = Color.fromARGB(127, 61, 72, 161);
-  // static const darkRed = Color.fromARGB(255, 162, 38, 54);
-  // static const black = Color.fromARGB(255, 56, 67, 74);
-  // static const shadow = Color.fromARGB(48, 0, 0, 0);
-
   // Базовые цвета (нейтральные)
   static const white = Color(0xFFFFFFFF);
   static const lightGray = Color(0xFFFBFBFB);
