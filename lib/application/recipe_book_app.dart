@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_book/application/theme/app_theme.dart';
 
 class RecipeBookApp extends StatelessWidget {
   const RecipeBookApp({super.key});
@@ -7,6 +8,7 @@ class RecipeBookApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      theme: AppTheme.lightTheme,
       home: const MyHomePage(title: 'Recipe Book'),
     );
   }
