@@ -19,10 +19,47 @@ class AppTheme {
       foregroundColor: AppColors.white,
       elevation: 6,
     ),
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+    appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.darkBlue,
-      selectedItemColor: AppColors.white,
-      unselectedItemColor: AppColors.transparentWhite,
+      foregroundColor: AppColors.white,
+      centerTitle: true,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadiusGeometry.vertical(
+          bottom: Radius.circular(20),
+        ),
+      ),
+      elevation: 4,
+    ),
+    navigationBarTheme: NavigationBarThemeData(
+      backgroundColor: AppColors.darkBlue,
+      surfaceTintColor: Colors.transparent,
+      indicatorColor: AppColors.white,
+      labelTextStyle: WidgetStateTextStyle.resolveWith((state) {
+        if (state.contains(WidgetState.selected)) {
+          return const TextStyle(
+            color: AppColors.white,
+            fontSize: 12,
+            letterSpacing: 0.4,
+            fontWeight: FontWeight.w400,
+          );
+        }
+
+        return const TextStyle(
+          color: AppColors.transparentWhite,
+          fontSize: 12,
+          letterSpacing: 0.4,
+          fontWeight: FontWeight.w400,
+        );
+      }),
+
+      iconTheme: WidgetStateProperty.resolveWith((state) {
+        if (state.contains(WidgetState.selected)) {
+          return const IconThemeData(color: AppColors.black);
+        }
+
+        return const IconThemeData(color: AppColors.white);
+      }),
+      elevation: 4,
     ),
     textTheme: TextTheme(
       headlineMedium: TextStyle(
