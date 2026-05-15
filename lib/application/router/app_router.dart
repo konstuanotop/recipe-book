@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:recipe_book/application/features/basket/presentation/pages/basket.dart';
-import 'package:recipe_book/application/features/categories/presentation/pages/categories.dart';
-import 'package:recipe_book/application/features/recipes/presentation/pages/recipes.dart';
+import 'package:recipe_book/application/features/basket/presentation/pages/basket_page.dart';
+import 'package:recipe_book/application/features/categories/presentation/pages/categories_page.dart';
+import 'package:recipe_book/application/features/recipes/presentation/pages/recipes_page.dart';
 import 'package:recipe_book/application/router/navigation_shell.dart';
 import 'package:recipe_book/application/router/route_names.dart';
 import 'package:recipe_book/application/router/route_paths.dart';
@@ -25,11 +25,10 @@ final router = GoRouter(
           navigatorKey: _recipesNavigatorKey,
           routes: [
             GoRoute(
-              // path: '/recipes',
               path: RoutePaths.recipes,
               name: RouteNames.recipes,
               builder: (context, state) {
-                return const Recipes();
+                return const RecipesPage();
               },
             ),
           ],
@@ -41,7 +40,7 @@ final router = GoRouter(
               path: RoutePaths.categories,
               name: RouteNames.categories,
               builder: (context, state) {
-                return const Categories();
+                return const CategoriesPage();
               },
             ),
           ],
@@ -53,7 +52,7 @@ final router = GoRouter(
               path: RoutePaths.basket,
               name: RouteNames.basket,
               builder: (context, state) {
-                return const Basket();
+                return const BasketPage();
               },
             ),
           ],

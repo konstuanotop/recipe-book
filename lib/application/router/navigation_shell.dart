@@ -13,24 +13,18 @@ class NavigationShellPage extends StatelessWidget {
     );
   }
 
-  String _getTitle() {
-    switch (navigationShell.currentIndex) {
-      case 0:
-        return 'Рецепты';
-      case 1:
-        return 'Категории';
-      case 2:
-        return 'Корзина';
-      default:
-        return '';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(_getTitle()), centerTitle: true),
-
+      appBar: AppBar(
+        title: Text(switch (navigationShell.currentIndex) {
+          0 => 'Рецепты',
+          1 => 'Категории',
+          2 => 'Корзина',
+          _ => '',
+        }),
+        centerTitle: true,
+      ),
       body: navigationShell,
       bottomNavigationBar: Material(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

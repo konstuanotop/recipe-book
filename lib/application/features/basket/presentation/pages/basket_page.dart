@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Basket extends StatelessWidget {
-  const Basket({super.key});
+class BasketPage extends StatelessWidget {
+  const BasketPage({super.key});
 
   @override
   Widget build(BuildContext context) {
