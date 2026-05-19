@@ -19,9 +19,9 @@ class NavigationShellPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(switch (navigationShell.currentIndex) {
-          0 => S.of(context).Recipes,
-          1 => S.of(context).Categories,
-          2 => S.of(context).Basket,
+          0 => S.of(context).recipes,
+          1 => S.of(context).categories,
+          2 => S.of(context).basket,
           _ => '',
         }),
         centerTitle: true,
@@ -36,15 +36,15 @@ class NavigationShellPage extends StatelessWidget {
           destinations: [
             NavigationDestination(
               icon: Icon(Icons.food_bank),
-              label: S.of(context).Recipes,
+              label: S.of(context).recipes,
             ),
             NavigationDestination(
               icon: Icon(Icons.category),
-              label: S.of(context).Categories,
+              label: S.of(context).categories,
             ),
             NavigationDestination(
               icon: Icon(Icons.shopping_basket),
-              label: S.of(context).Basket,
+              label: S.of(context).basket,
             ),
           ],
         ),

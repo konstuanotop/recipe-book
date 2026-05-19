@@ -55,18 +55,18 @@ class S {
   }
 
   /// `Recipes`
-  String get Recipes {
-    return Intl.message('Recipes', name: 'Recipes', desc: '', args: []);
+  String get recipes {
+    return Intl.message('Recipes', name: 'recipes', desc: '', args: []);
   }
 
   /// `Categories`
-  String get Categories {
-    return Intl.message('Categories', name: 'Categories', desc: '', args: []);
+  String get categories {
+    return Intl.message('Categories', name: 'categories', desc: '', args: []);
   }
 
   /// `Basket`
-  String get Basket {
-    return Intl.message('Basket', name: 'Basket', desc: '', args: []);
+  String get basket {
+    return Intl.message('Basket', name: 'basket', desc: '', args: []);
   }
 }
 

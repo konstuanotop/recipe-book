@@ -6,6 +6,6 @@ class RecipesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(S.of(context).Recipes));
+    return Center(child: Text(S.of(context).recipes));
   }
 }

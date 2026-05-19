@@ -1,5 +1,5 @@
 {
-    "Recipes": "Рецепты",
-    "Categories": "Категории",
-    "Basket": "Корзина"
+    "recipes": "Рецепты",
+    "categories": "Категории",
+    "basket": "Корзина"
 }

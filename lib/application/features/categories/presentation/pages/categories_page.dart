@@ -6,6 +6,6 @@ class CategoriesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(S.of(context).Categories));
+    return Center(child: Text(S.of(context).categories));
   }
 }

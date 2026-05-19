@@ -6,6 +6,6 @@ class BasketPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(S.of(context).Basket));
+    return Center(child: Text(S.of(context).basket));
   }
 }
