@@ -1,5 +1,11 @@
 {
     "recipes": "Recipes",
     "categories": "Categories",
-    "basket": "Basket"
+    "basket": "Basket",
+    "soups": "Soups",
+    "desserts": "Desserts",
+    "all": "All",
+    "cookingTime": "Cooking time",
+    "ingredients": "Ingredients",
+    "instruction": "Instruction"
 }
