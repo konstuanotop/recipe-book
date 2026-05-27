@@ -17,15 +17,6 @@ class NavigationShellPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(switch (navigationShell.currentIndex) {
-          0 => S.of(context).recipes,
-          1 => S.of(context).categories,
-          2 => S.of(context).basket,
-          _ => '',
-        }),
-        centerTitle: true,
-      ),
       body: navigationShell,
       bottomNavigationBar: Material(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

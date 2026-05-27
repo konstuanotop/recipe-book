@@ -85,6 +85,12 @@ class AppTheme {
         color: AppColors.black,
         letterSpacing: 0.25,
       ),
+      bodySmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: AppColors.gray,
+        letterSpacing: 0.25,
+      ),
       labelLarge: TextStyle(
         fontSize: 12,
         fontWeight: FontWeight.w400,
@@ -106,7 +112,7 @@ class AppTheme {
       ),
       labelStyle: TextStyle(
         color: AppColors.gray,
-        fontSize: 12,
+        fontSize: 14,
         letterSpacing: 0.5,
       ),
     ),

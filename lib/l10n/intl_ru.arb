@@ -1,5 +1,11 @@
 {
     "recipes": "Рецепты",
     "categories": "Категории",
-    "basket": "Корзина"
+    "basket": "Корзина",
+    "soups": "Супы",
+    "desserts": "Десерты",
+    "all": "Все",
+    "cookingTime": "Время приготовления",
+    "ingredients": "Ингредиенты",
+    "instruction": "Способ приготовления"
 }

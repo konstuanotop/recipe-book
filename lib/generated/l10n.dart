@@ -68,6 +68,41 @@ class S {
   String get basket {
     return Intl.message('Basket', name: 'basket', desc: '', args: []);
   }
+
+  /// `Soups`
+  String get soups {
+    return Intl.message('Soups', name: 'soups', desc: '', args: []);
+  }
+
+  /// `Desserts`
+  String get desserts {
+    return Intl.message('Desserts', name: 'desserts', desc: '', args: []);
+  }
+
+  /// `All`
+  String get all {
+    return Intl.message('All', name: 'all', desc: '', args: []);
+  }
+
+  /// `Cooking time`
+  String get cookingTime {
+    return Intl.message(
+      'Cooking time',
+      name: 'cookingTime',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ingredients`
+  String get ingredients {
+    return Intl.message('Ingredients', name: 'ingredients', desc: '', args: []);
+  }
+
+  /// `Instruction`
+  String get instruction {
+    return Intl.message('Instruction', name: 'instruction', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
